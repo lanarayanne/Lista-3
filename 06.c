@@ -1,4 +1,4 @@
-/*Faca um programa que peca ao usuario para digitar 10 valores e some-os. */
+/*. Faca um programa que leia 10 inteiros e imprima sua media. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,6 +6,7 @@
 int main ()
 {
     int soma= 0, num, cont = 1;
+    float media;
 
     while (cont <=10)
     {
@@ -15,7 +16,8 @@ int main ()
         cont = cont + 1;
     }
     
-    printf ("Soma: %d", soma);
+    media = soma/10.0;
+    printf ("Media: %d / 10 =  %.2f", soma, media);
 
 return 0;
 }
