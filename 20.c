@@ -13,24 +13,26 @@ int main ()
     
     printf ("Digite apenas numeros inteiros (1000 para terminar)\n");
     
+    printf ("\n%d) Numero: ",cont+1);
+    scanf ("%d", &num);
+    
     while (num != 1000)
     {
-        if (num!=1000)
-        {
-         printf ("\n%d) Numero: ",cont+1);
-         scanf ("%d", &num);
-         if (num%2 == 0)
+        if (num%2 == 0)
          {
              printf ("PAR");
              soma = soma+1;
          } else {printf ("IMPAR");}
          cont= cont+1;
-        } else {break;}
+         
+    printf ("\n%d) Numero: ",cont+1);
+    scanf ("%d", &num);
     }
     
+    
     printf ("\n\nFIM");
-    printf ("\nTotal de valores: %d", cont-1); //-1 para excluir o 1000
-    printf ("\nTotal de numeros pares: %d", soma-1); //-1 para excluir o 1000
+    printf ("\nTotal de valores: %d", cont);
+    printf ("\nTotal de numeros pares: %d", soma);
     
 return 0;
 }
