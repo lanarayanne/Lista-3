@@ -1,5 +1,5 @@
-/*Faca um programa que conte quantos numeros primos existem entre a e b, onde a e b
-sao numeros informados pelo usuario.*/
+/*Fac¸a um programa que some os numeros primos existentes entre ´ a e b, onde a e b sao˜
+numeros informados pelo usu ´ ario.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,19 +26,19 @@ int main()
     
     if (a<b)
     {
-    while (cont4 < num)
+    while (cont1 <= b)
     {
         while (cont2 <= cont1)
         {
             if (cont1%cont2 == 0) {cont3 = cont3 + 1;} 
             cont2 = cont2 + 1;
         }
-        if (cont3 <= 2) {cont4 = cont4 + 1; soma = soma + cont1;} 
+        if (cont3 <= 2) {printf ("%d ", cont1); cont4 = cont4 + 1; soma = soma + cont1;} 
         cont1 = cont1 + 1;
         cont2 = 1;
         cont3 = 0;
     }
-    printf ("\nEntre %d e %d existem %d numeros impares", a, b, cont4-1);
+    printf ("\nSoma dos numeros primos entre %d e %d = %d", a, b, soma);
     }
     else if (a==b) {printf ("Os numeros sao iguais");}
     else {printf ("Intervalo Invalido (B maior que A)");}

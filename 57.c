@@ -25,7 +25,7 @@ int main()
     
     if (a<b)
     {
-    while (cont4 < num)
+    while (cont1 < num)
     {
         while (cont2 <= cont1)
         {

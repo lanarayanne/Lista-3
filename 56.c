@@ -11,7 +11,6 @@ int main()
     int cont1 = 1; // numero que vai testar se e primo (++1)
     int cont2 = 1; // numero para dividir por cont1 enquanto for menor ou igual a ele.
     int cont3 = 0; // quantidade de numeros que o cont1 e divisivel
-    int cont4 = 0; // quantidade de numeros primos
     int soma = 0;
     
     
